@@ -1,0 +1,95 @@
+/* REGRA PARA TELAS DE NO MÁXIMO 800PX*/
+@media only screen and (max-width: 800px){
+
+    #cabecalho .container{
+        display: block;
+        padding: 15px 0;
+    }
+
+    #cabecalho #logo{
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    #cabecalho #but-menu{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+    }
+    
+    #cabecalho #menu ul{
+        position: relative;
+        right: auto;
+        top: auto;
+    }
+
+    #cabecalho #menu{
+        display: none;/*menu ivisivel*/
+        margin-top: 15px;
+    }
+
+
+    #cabecalho #menu ul li{
+        display: block;
+    
+    }
+
+    #cabecalho #menu ul li a{
+        text-align: center;
+        border-bottom: 1px solid #666;
+    }
+
+    #cabecalho #menu ul li:first-child a{
+        border-bottom: 1px solid #666;
+    }
+
+    #modelos .container{
+        grid-template-columns: repeat(2, 1fr);
+    } 
+
+    /*VIDEOS*/
+    #videos .container{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+}
+
+/*REGRA PARA TELAS DE NO MÁXIMO 360PX*/
+@media only screen and (max-width: 360px){
+
+    #modelos .titulo-secao{
+        font-size: 200%;
+    }
+
+    #modelos .container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #modelos .container img{
+        margin: 0 auto;
+        margin-bottom: 30px;
+        max-width: 50%;
+        display: block;
+    }
+
+    #modelos h3{
+        text-align: center;
+    }
+
+    #modelos .but-comprar{
+        margin: 0 auto;
+    }
+
+    /*VIDEOS*/
+    #videos .container{
+        grid-template-columns: 1fr;
+         
+    }
+
+    #quem-somos img{
+        width: 100%;
+        margin: 0 auto 15px;
+    }
+}
